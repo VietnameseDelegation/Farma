@@ -6,12 +6,14 @@ public abstract class Flower {
     protected double price;
     protected double neededArea;
     protected double chanceOfGrowth;
+    protected TypeOfFlower type;
 
-    public Flower(String name, double price, double neededArea, double chanceOfGrowth) {
+    public Flower(String name, double price, double neededArea, double chanceOfGrowth,TypeOfFlower type) {
         this.name = name;
         this.price = price;
         this.neededArea = neededArea;
         this.chanceOfGrowth = chanceOfGrowth;
+        this.type = type;
     }
 
     public void growth(){
